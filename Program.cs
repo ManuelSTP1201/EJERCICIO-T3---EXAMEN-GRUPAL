@@ -1,61 +1,85 @@
-﻿
-byte opcion;
+﻿using EJERCICIO_TRABAJO_DE_PROG.___GRUPO_5;
+ string opcion;
+List<Desayuno> desayunos = new List<Desayuno>();
+do {
+   
+    string desa, dias, precio;
 
-string regresar;
+    Console.WriteLine("Menú de Desayunos: \n");
+    Console.WriteLine("a) Crear desayuno\n");
+    Console.WriteLine("b) Listar desayunos\n");
+    Console.WriteLine("c) Eliminar desayuno\n");
+    Console.WriteLine("d) Salir\n");
+    Console.Write("Selecciona una opción: \n");
+    opcion = Console.ReadLine().ToLower();
+    
+    
+    switch (opcion) {
+        case "a":   
+    Console.WriteLine("\nIngrese el nombre del desayuno: ");
+    desa = Console.ReadLine().ToLower();
+    Console.WriteLine("\nIngrese el precio del desayuno: ");
+    precio = Console.ReadLine().ToLower();
+    Console.WriteLine("\nIngrese los dias que esta disponible el desayuno: ");
+    dias = Console.ReadLine().ToLower();
 
-do
-{
+            Desayuno desayuno = new Desayuno()
+            {
+                Nombre = desa,
+                Precio = precio,
+                Dias = dias
+            };
+            desayunos.Add(desayuno);
+            Console.WriteLine("\nDesayuno agregado exitosamente\n");
+            break;
 
-    Console.WriteLine("MENU DE DESAYUNOS\n");
+        case "b":
+            Console.WriteLine("\nLista de Desayunos:");
+            if (desayunos.Count == 0)
+            {
+                Console.WriteLine("No hay desayunos registrados.\n");
+            }
+            else
+            {
+                foreach (var d in desayunos)
+                {
+                    int diasDisponibles = d.ListaDias().Length;
+                    Console.WriteLine($"{d.Nombre} S/{d.Precio} Disponible: {diasDisponibles} días\n");
+                }
+                Console.WriteLine();
+            }
+            break;
 
-    Console.WriteLine("******* MENÚ *******");
+        case "c":
+            Console.Write("\nIngrese el nombre del desayuno que desea eliminar: ");
+            string nombreEliminar = Console.ReadLine();
+            bool encontrado = false;
 
-    Console.WriteLine("* 1. Crear   *");
+            for (int i = 0; i < desayunos.Count; i++)
+            {
+                if (desayunos[i].Nombre.Equals(nombreEliminar, StringComparison.OrdinalIgnoreCase))
+                {
+                    desayunos.RemoveAt(i);
+                    Console.WriteLine("\nDesayuno eliminado exitosamente.\n");
+                    encontrado = true;
+                    break;
+                }
+            }
 
-    Console.WriteLine("* 2. Listar    *");
+            if (!encontrado)
+            {
+                Console.WriteLine("\nDesayuno no encontrado.\n");
+            }
+            break;
 
-    Console.WriteLine("* 3. Eliminar   *");
+        case "d":
+            Console.WriteLine("\nSaliendo del menú...");
+            break;
 
-    Console.WriteLine("* 0. Salir     *");
-
-    Console.WriteLine("********************\n");
-
-
-
-    Console.Write("Ingrese opcion: ");
-
-
-
-    while (!byte.TryParse(Console.ReadLine(), out opcion) || opcion > 3)
-    {
-
-        Console.Write("Error: Ingrese opcion: ");
-
+        default:
+            Console.WriteLine("Opción no válida. Intente nuevamente.\n");
+            break;
     }
+} while (opcion!="d");
 
-
-
-    switch (opcion)
-    {
-
-        case 0: Environment.Exit(0); break;
-
-        case 1: break;
-
-        case 2: break;
-
-        case 3: break;
-
-        case 4: break;
-
-    }
-
-    Console.WriteLine("Desea regresar al menú? [si]: ");
-
-    regresar = Console.ReadLine();
-
-    Console.Clear();
-
-} while (regresar == "si");
-
-
+Console.ReadKey();
