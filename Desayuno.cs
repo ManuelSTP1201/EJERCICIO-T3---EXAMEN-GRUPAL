@@ -17,9 +17,5 @@ namespace EJERCICIO_TRABAJO_DE_PROG.___GRUPO_5
         {
             return Dias.Split(",");
         }
-        public void ListarDesayunos()
-        {
-
-        }
     }
 }

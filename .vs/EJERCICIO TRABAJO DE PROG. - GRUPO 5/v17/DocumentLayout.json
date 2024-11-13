@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\MANUEL\\Downloads\\INISCO-8568\\EJERCICIO-T3---EXAMEN-GRUPAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE8CC519-5CAD-4C54-833B-86F792CDEE51}|EJERCICIO TRABAJO DE PROG. - GRUPO 5.csproj|c:\\users\\manuel\\downloads\\inisco-8568\\ejercicio-t3---examen-grupal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE8CC519-5CAD-4C54-833B-86F792CDEE51}|EJERCICIO TRABAJO DE PROG. - GRUPO 5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DE8CC519-5CAD-4C54-833B-86F792CDEE51}|EJERCICIO TRABAJO DE PROG. - GRUPO 5.csproj|c:\\users\\manuel\\downloads\\inisco-8568\\ejercicio-t3---examen-grupal\\desayuno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE8CC519-5CAD-4C54-833B-86F792CDEE51}|EJERCICIO TRABAJO DE PROG. - GRUPO 5.csproj|solutionrelative:desayuno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE8CC519-5CAD-4C54-833B-86F792CDEE51}|EJERCICIO TRABAJO DE PROG. - GRUPO 5.csproj|c:\\users\\manuel\\downloads\\inisco-8568\\ejercicio-t3---examen-grupal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE8CC519-5CAD-4C54-833B-86F792CDEE51}|EJERCICIO TRABAJO DE PROG. - GRUPO 5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Desayuno.cs",
               "DocumentMoniker": "C:\\Users\\MANUEL\\Downloads\\INISCO-8568\\EJERCICIO-T3---EXAMEN-GRUPAL\\Desayuno.cs",
               "RelativeDocumentMoniker": "Desayuno.cs",
               "ToolTip": "C:\\Users\\MANUEL\\Downloads\\INISCO-8568\\EJERCICIO-T3---EXAMEN-GRUPAL\\Desayuno.cs",
               "RelativeToolTip": "Desayuno.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T13:31:33.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MANUEL\\Downloads\\INISCO-8568\\EJERCICIO-T3---EXAMEN-GRUPAL\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -43,8 +43,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAFQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:29:30.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T13:29:30.398Z"
             }
           ]
         }
