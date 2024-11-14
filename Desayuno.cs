@@ -15,7 +15,7 @@ namespace EJERCICIO_TRABAJO_DE_PROG.___GRUPO_5
 
         public string[] ListaDias()
         {
-            return Dias.Split(",");
+            return Dias.Split(',');
         }
     }
 }
